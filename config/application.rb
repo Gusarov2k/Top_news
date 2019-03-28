@@ -44,5 +44,7 @@ module TopNews
                           controller_spec: true
       g.fixture_replacement :factory_bot, dir: 'spec/factories'
     end
+
+    config.middleware.use Rack::Attack
   end
 end
